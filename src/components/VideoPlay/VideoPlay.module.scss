@@ -1,0 +1,17 @@
+.wrap{
+  position: relative;
+  width: 100%;
+  //アスペクト比を保つために擬似要素を使う。スマホなどデバイスの大きさが変わっても、比率が崩れない。
+  &:before{
+    display: block;
+    content:"";
+    padding-top: 56.2%;
+  }
+  .video{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+  }
+}
